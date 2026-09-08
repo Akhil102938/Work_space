@@ -1,0 +1,19 @@
+arr = [3, 4, -7, 1, 3, 3, 1, -4]
+k = 7
+
+precount = {0: 1}
+presum = 0
+count = 0
+
+for x in arr:
+    presum += x
+
+    # Find previous prefix sums
+    needed = presum - k
+
+    if needed in precount:
+        count += precount[needed]
+
+    precount[presum] = precount.get(presum, 0) + 1
+
+print(count)
