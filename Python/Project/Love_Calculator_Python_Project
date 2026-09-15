@@ -1,0 +1,31 @@
+print("-------Welcome to Love Calculater---------")
+name1 = input("Enter your Name: ")
+name2 = input("Enter his/her Name: ")
+
+combine_string = name1 + name2
+lower_case = combine_string.lower()
+
+T = lower_case.count('t')
+R = lower_case.count('r')
+U = lower_case.count('u')
+E = lower_case.count('e')
+
+true_score = T + R + U + E
+
+L = lower_case.count('l')
+O = lower_case.count('o')
+V = lower_case.count('v')
+E = lower_case.count('e')
+
+love_score_part = L + O + V + E
+
+love_score = int(str(true_score) + str(love_score_part))
+
+if love_score > 90:
+    print(f"Whoa! 😍 You two are made for each other! Your Love Score is {love_score}% ❤️")
+elif love_score >= 45:
+    print(f"Nice! 😊 There’s definitely some love in the air! Your Love Score is {love_score}% 💕")
+else:
+    print(f"Hmm 😅 maybe you need a little more love! Your Love Score is {love_score}% ❤️")
+    
+print("\n----*--End--*----")
