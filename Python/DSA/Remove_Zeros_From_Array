@@ -1,0 +1,6 @@
+nums = [10, 0, 0, 30, 4, 0, 5, 7]
+
+# Remove all zeros
+nums = [x for x in nums if x != 0]
+
+print(nums)
